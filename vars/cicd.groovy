@@ -15,6 +15,5 @@ def newDeploy(jobname,ip,appname)
 
 def runseleniumprograms(repo)
 {
-  git "https://github.com/intelliqittrainings/${repo}"
   sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar"
 }
